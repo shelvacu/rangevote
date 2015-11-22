@@ -1,0 +1,22 @@
+%p#notice= notice
+%h1 Listing Options
+%table
+  %thead
+    %tr
+      %th Poll
+      %th Text
+      %th Total vote
+      %th Num voted
+      %th{:colspan => "3"}
+  %tbody
+    - @options.each do |option|
+      %tr
+        %td= option.poll
+        %td= option.text
+        %td= option.total_vote
+        %td= option.num_voted
+        %td= link_to 'Show', option
+        %td= link_to 'Edit', edit_option_path(option)
+        %td= link_to 'Destroy', option, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Option', new_option_path

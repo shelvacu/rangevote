@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  option_id: 
+  weight: 1
+  voter_ip: MyString
+
+two:
+  option_id: 
+  weight: 1
+  voter_ip: MyString

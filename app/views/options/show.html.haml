@@ -1,0 +1,16 @@
+%p#notice= notice
+%p
+  %strong Poll:
+  = @option.poll
+%p
+  %strong Text:
+  = @option.text
+%p
+  %strong Total vote:
+  = @option.total_vote
+%p
+  %strong Num voted:
+  = @option.num_voted
+= link_to 'Edit', edit_option_path(@option)
+|
+= link_to 'Back', options_path

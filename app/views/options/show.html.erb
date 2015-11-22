@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Poll:</strong>
+  <%= @option.poll %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @option.text %>
+</p>
+
+<p>
+  <strong>Total vote:</strong>
+  <%= @option.total_vote %>
+</p>
+
+<p>
+  <strong>Num voted:</strong>
+  <%= @option.num_voted %>
+</p>
+
+<%= link_to 'Edit', edit_option_path(@option) %> |
+<%= link_to 'Back', options_path %>
